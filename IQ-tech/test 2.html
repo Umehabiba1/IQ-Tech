@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software Solutions</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    /* Custom styles */
+    .half-image-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+    .col-md-6 img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+    .half-image-content .content {
+      padding: 40px;
+      background-color: #339ed4; /* Light blue background color */
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      opacity: 0;
+      animation: fadeInAnimation 3s ease forwards;
+    }
+    .half-image-content img {
+      max-width: 100%;
+      transition: all 0.3s ease;
+    }
+    .content h2 {
+      color: #2c3e50;
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .content p {
+      color: #34495e;
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    .content button {
+      background-color: #dc9a1f;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .content button:hover {
+      background-color: #2980b9;
+    }
+    /* Animation */
+    @keyframes fadeInAnimation {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Your Logo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Breadcrumbs -->
+<div class="container mt-3">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Services</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Software Solutions</li>
+    </ol>
+  </nav>
+</div>
+
+<!-- Carousel with half image and half content -->
+<div class="container-fluid mt-3">
+  <div class="row half-image-content">
+    <div class="col-md-6">
+      <img src="/IQ-tech/assets/img/cloud-application-services.png" alt="Half Image" class="img-fluid">
+    </div>
+    <div class="col-md-6 content">
+      <h2>Software Solutions</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae metus nec sapien fringilla posuere ac ac purus. Vestibulum non augue non tortor varius tempus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae.</p>
+      <button class="btn btn-primary">Learn More</button>
+    </div>
+  </div>
+</div>
+<main id="main">
+    <section class="services">
+        <div class="container">      
+          <div class="row">
+            <h1>Develop Enterprise Cloud Solutions using Microsoft Azure</h1>
+            <p>IQ TECH excels in advanced API & Web App development using design-first approach, creating cutting-edge solutions for Web. Our Azure certified team guarantees high-end performance, engaging designs, and outstanding user experiences.</p>      
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box icon-box-cyan" id="MAD">
+                <div class="img-fluid"><img src="/IQ-tech/assets/img/azure2.png" width="105" height="105"></div>
+                <h4 class="title"><a href="">Microsoft Azure Cloud</a></h4>
+                <p class="description">Our Frontend & Backend Apps are developed on Microsoft Azure Cloud’s state-of-the art services ensuring enterprise grade performance, scalability and security.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-green" id="AI">
+                <div class="img-fluid"><img src="/IQ-tech/assets/img/front.png" width="100" height="100"></div>
+                <h4 class="title"><a href="">Frontend Development</a></h4>
+                <p class="description">We develop feature-rich Single Page Applications using ReactJS framework to deliver engaging user experiences with blazing performance and hardened security.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-4 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box icon-box-yellow" id="UI">
+                <div class="img-fluid"><img src="/IQ-tech/assets/img/Backend.png" ></div>
+                <h4 class="title"><a href=""> Backend Development</a></h4>
+                <p class="description">We develop scalable & highly secure API based backends using a design-first approach & latest OpenAPI specifications on Microsoft .NET Framework.
+
+                </p>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section>
+      <!-- End Services Section -->
+
+      <!-- Cloud Computing Section -->
+      <section class="cloud-computing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content text-column">
+                        <h2>Network Infrastructure Solutions: Building Reliable Connections</h2>
+                        <p>In an increasingly interconnected world, the foundation of your organization’s success lies in its network infrastructure. Our Network Infrastructure Solutions ensure your business remains seamlessly connected. Our expertise in designing, deploying, and supporting networks guarantees efficiency, security, and scalability. Trust us to fortify your digital backbone.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="content">
+                        <img src="/IQ-tech/assets/img/cloud-application-services.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Cloud Computing Section -->
+</main>
+<!-- End #main -->
+
+<!-- Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
